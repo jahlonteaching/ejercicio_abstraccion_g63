@@ -23,5 +23,6 @@ class App:
                 print("Saliendo.....")
                 break
 
-    def obtener_transformador(self, tipo):
+    def obtener_transformador(self, tipo) -> Transformador:
         pass
+
