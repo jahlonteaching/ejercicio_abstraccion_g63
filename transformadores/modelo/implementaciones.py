@@ -82,7 +82,7 @@ class TransformText(Transformador):
 
         elif tipo == 3:
             numbers_text = []
-            for i in self.s:
+            for i in text:
                 if i.isalpha():
                     numbers_text.append(str(ord(i) - 64))
                 else:
