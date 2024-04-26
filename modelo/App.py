@@ -17,6 +17,7 @@ class App:
 
             if opcion == "1":
                 self.obtener_transformador()
+                self.transformar()
 
             if opcion == "2":
                 print("Hasta pronto")
