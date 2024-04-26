@@ -102,7 +102,7 @@ class CambiosTxt(Transformador):
 
     def admiracion(self, string: str):
         texto_nuevo = string + '!'
-        print(texto_nuevo)
+        return texto_nuevo
 
     def transformar(self, string: str, tipo: int) -> str:
         if tipo == 1:
