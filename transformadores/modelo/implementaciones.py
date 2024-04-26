@@ -1,7 +1,7 @@
 from transformadores.modelo.abstracciones import Transformador
 
 
-class MorseConverter(Transformador):
+class TransformText(Transformador):
     def transformar(self, text: str, tipo: int) -> str:
         if tipo == 1:
             morse_code = {'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.',
@@ -31,4 +31,3 @@ class MorseConverter(Transformador):
                 else:
                     numbers_text.append(i)
             return ' '.join(numbers_text)
-
