@@ -88,3 +88,28 @@ class TransformText(Transformador):
                 else:
                     numbers_text.append(i)
             return ' '.join(numbers_text)
+
+
+class CambiosTxt(Transformador):
+
+    def texto_invertido(self, string: str):
+        texto_invertido = ''.join(palabra[::-1] for palabra in string.split())
+        return texto_invertido
+
+    def texto_mayusculas(self, string: str):
+        mayusculas = string.upper()
+        return mayusculas
+
+    def admiracion(self, string: str):
+        texto_nuevo = string + '!'
+        print(texto_nuevo)
+
+    def transformar(self, string: str, tipo: int) -> str:
+        if tipo == 1:
+            return self.texto_invertido(string)
+        elif tipo == 2:
+            return self.texto_mayusculas(string)
+        elif tipo == 3:
+            return self.admiracion(string)
+        else:
+            return string.capitalize()
