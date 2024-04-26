@@ -1,5 +1,7 @@
 
-class Encrypt:
+from transformadores.modelo.abstracciones import Transformador
+
+class Encrypt(Transformador):
     def to_morse(self, string) -> str:
         morse_code = {
             'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....',
