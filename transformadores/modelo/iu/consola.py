@@ -20,7 +20,7 @@ class App:
                 self.seleccionar_metodo()
                 self.seleccionar_tipo()
                 opcion_tipo = input("seleccione una opción: ")
-                string_transformado = method_transformer.transformar(string, opcion_tipo)
+                string_transformado = self.objeto.transformar(string, opcion_tipo)
                 print("Resultado: ", string_transformado)
 
 
