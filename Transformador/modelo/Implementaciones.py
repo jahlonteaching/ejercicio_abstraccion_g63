@@ -1,6 +1,6 @@
-from modelo.abstraccion import Transformador
+from Transformador.modelo.abstraccion import Transformador
 
-class Transformador1(Transformador):
+class cambios_txt(Transformador):
     def __init__(self, texto):
         self.texto = texto
 
